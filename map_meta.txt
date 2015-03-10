@@ -1,0 +1,26 @@
+chunksize = 5
+mg_biome_np_heat = {
+	flags = defaults
+	lacunarity = 2
+	octaves = 3
+	offset = 50
+	persistence = 0.5
+	scale = 50
+	seed = 5349
+	spread = (500,500,500)
+}
+mg_biome_np_humidity = {
+	flags = defaults
+	lacunarity = 2
+	octaves = 3
+	offset = 50
+	persistence = 0.5
+	scale = 50
+	seed = 842
+	spread = (500,500,500)
+}
+mg_flags = flat, light
+mg_name = singlenode
+seed = 8272917064822957149
+water_level = 1
+[end_of_params]
