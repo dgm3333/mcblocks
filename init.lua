@@ -1963,9 +1963,42 @@ local USES = 200
 
 -- Handles rotation
 local function mcDriver_handler(itemstack, user, pointed_thing, mode)
+    minetest.env:set_timeofday(0.3)    -- keep it daytime...
+
     if pointed_thing.type ~= "node" then
         return
     end
+
+        yaw = user:get_look_yaw()
+        if yaw ~= nil then
+        -- Find angle player facing to enable rotation of position arrow based on yaw.
+        yaw = math.deg(yaw)
+        yaw = math.fmod (yaw, 360)
+        if yaw<0 then yaw = 360 + yaw end
+        if yaw>360 then yaw = yaw - 360 end
+        if yaw < 90 then
+            rotate = 90
+        elseif yaw < 180 then
+            rotate = 180
+        elseif yaw < 270 then
+            rotate = 270
+        else
+            rotate = 0
+        end
+        if yaw>315 or yaw<=45 then
+            facing="East"
+        elseif yaw>45 and yaw<=135 then
+            facing="North"
+        elseif yaw>135 and yaw<=225 then
+            facing="West"
+        elseif yaw>225 and yaw<=315 then
+            facing="South"
+        end
+
+        yaw = math.fmod(yaw, 90)
+        yaw = math.floor(yaw / 10) * 10
+        end
+
 
     local pos = pointed_thing.under
 
@@ -1998,18 +2031,22 @@ local function mcDriver_handler(itemstack, user, pointed_thing, mode)
         meta:set_string("OrigParam2", OrigParam2);
     end
 
-    local axisdir = math.floor(rotationPart / 4)
-    local rotation = rotationPart - axisdir * 4
+--    local axisdir = math.floor(rotationPart / 4)
+--    local rotation = rotationPart - axisdir * 4
     if mode == ROTATE_FACE then
-        rotationPart = axisdir * 4 + nextrange(rotation, 3)
+        rotationPart = rotationPart + 1
+        if rotationPart == 24 then rotationPart = 0 end
+--        rotationPart = axisdir * 4 + nextrange(rotation, 3)
     elseif mode == ROTATE_AXIS then
-        rotationPart = nextrange(axisdir, 5) * 4
+        rotationPart = rotationPart - 1
+        if rotationPart == -1 then rotationPart = 23 end
+--        rotationPart = nextrange(axisdir, 5) * 4
     end
 
     node.param2 = preservePart + rotationPart
     minetest.swap_node(pos, node)
 
-    chatText = "OrigParam2:".. OrigParam2.. " param2 post:".. node.param2.. " (rot:".. rotationPart.. "pres:".. preservePart.. ")"
+    chatText = "Param2:orig:".. OrigParam2.. " cur:".. node.param2.. " (rot:".. rotationPart.. "pres:".. preservePart.. ") player facing:".. facing
     minetest.chat_send_player(user:get_player_name(), chatText, false)
 
     if not minetest.setting_getbool("creative_mode") then

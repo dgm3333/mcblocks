@@ -304,15 +304,16 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 
 52	mcblocks:Mob_Spawner
 
-53 0	mcblocks:stair_Oak_Wooden 1		//E
-53 1	mcblocks:stair_Oak_Wooden 3		//W
-53 2	mcblocks:stair_Oak_Wooden 2		//S
-53 3	mcblocks:stair_Oak_Wooden 0		//N
-53 4	mcblocks:stair_Oak_Wooden_USD 1		//E
-53 5	mcblocks:stair_Oak_Wooden_USD 3		//W
-53 6	mcblocks:stair_Oak_Wooden_USD 2		//S
-53 7	mcblocks:stair_Oak_Wooden_USD 0		//N
+53 0	mcblocks:stair_Oak_Wooden 3		//E
+53 1	mcblocks:stair_Oak_Wooden 1		//W    correct
+53 2	mcblocks:stair_Oak_Wooden 0		//S	correct
+53 3	mcblocks:stair_Oak_Wooden 2		//N
+53 4	mcblocks:stair_Oak_Wooden_USD 3		//E
+53 5	mcblocks:stair_Oak_Wooden_USD 1		//W
+53 6	mcblocks:stair_Oak_Wooden_USD 0		//S
+53 7	mcblocks:stair_Oak_Wooden_USD 2		//N
 
+54 0	mcblocks:Chest 0		//??
 54 2	mcblocks:Chest 0		//N	// TODO: contents
 54 3	mcblocks:Chest 2		//S
 54 4	mcblocks:Chest 3		//W
@@ -370,20 +371,39 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 
 
 64 0	mcblocks:Wooden_Door_Bottom_Closed 3		//W
-64 1	mcblocks:Wooden_Door_Bottom_Closed 0		//N
+64 1	mcblocks:Wooden_Door_Bottom_Closed 2		//N
 64 2	mcblocks:Wooden_Door_Bottom_Closed 1		//E
-64 3	mcblocks:Wooden_Door_Bottom_Closed 2		//S
+64 3	mcblocks:Wooden_Door_Bottom_Closed 0		//S
 64 4	mcblocks:Wooden_Door_Bottom_Open 3		//W
-64 5	mcblocks:Wooden_Door_Bottom_Open 0		//N
+64 5	mcblocks:Wooden_Door_Bottom_Open 2		//N
 64 6	mcblocks:Wooden_Door_Bottom_Open 1		//E
-64 7	mcblocks:Wooden_Door_Bottom_Open 2		//S
+64 7	mcblocks:Wooden_Door_Bottom_Open 0		//S
 64 8	mcblocks:Wooden_Door_Top_HingeRight
 64 9	mcblocks:Wooden_Door_Top_HingeLeft
+64 10	mcblocks:Wooden_Door_Top_HingeRight 2
+64 11	mcblocks:Wooden_Door_Top_HingeLeft 2
+64 12	mcblocks:Wooden_Door_Top_HingeRight 1
+64 13	mcblocks:Wooden_Door_Top_HingeLeft 1
+64 14	mcblocks:Wooden_Door_Top_HingeRight 0
+64 15	mcblocks:Wooden_Door_Top_HingeLeft 0
 
+65 0	mcblocks:Ladder 0		//?
+65 1	mcblocks:Ladder 1		//?
 65 2	mcblocks:Ladder 4		//N
 65 3	mcblocks:Ladder 5		//S
 65 4	mcblocks:Ladder 3		//W
 65 5	mcblocks:Ladder 2		//E
+65 6	mcblocks:Ladder 6		//?
+65 7	mcblocks:Ladder 7		//?
+65 8	mcblocks:Ladder 8		//?
+65 9	mcblocks:Ladder 9		//?
+65 10	mcblocks:Ladder 10		//?
+65 11	mcblocks:Ladder 11		//?
+65 12	mcblocks:Ladder 12		//?
+65 13	mcblocks:Ladder 13		//?
+65 14	mcblocks:Ladder 14		//?
+65 15	mcblocks:Ladder 15		//?
+
 
 66 0	mcblocks:Rail 0		//N
 66 1	mcblocks:Rail 1		//E
@@ -396,14 +416,14 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 66 8	mcblocks:Rail 5			//N
 66 9	mcblocks:Rail 3			//W
 
-67 0	mcblocks:stair_Cobblestone 1		//E
-67 1	mcblocks:stair_Cobblestone 3		//W
-67 2	mcblocks:stair_Cobblestone 2		//S
-67 3	mcblocks:stair_Cobblestone 0		//N
-67 4	mcblocks:stair_Cobblestone_USD 1		//E
-67 5	mcblocks:stair_Cobblestone_USD 3		//W
-67 6	mcblocks:stair_Cobblestone_USD 2		//S
-67 7	mcblocks:stair_Cobblestone_USD 0		//N
+67 0	mcblocks:stair_Cobblestone 3		//E
+67 1	mcblocks:stair_Cobblestone 1		//W
+67 2	mcblocks:stair_Cobblestone 0		//S
+67 3	mcblocks:stair_Cobblestone 2		//N
+67 4	mcblocks:stair_Cobblestone_USD 3		//E
+67 5	mcblocks:stair_Cobblestone_USD 1		//W
+67 6	mcblocks:stair_Cobblestone_USD 0		//S
+67 7	mcblocks:stair_Cobblestone_USD 2		//N
 
 68 2	default:sign_wall 4
 68 3	default:sign_wall 5
@@ -434,7 +454,25 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 69 15	mcblocks:Lever_Active 0		//DS
 
 70	mcblocks:Stone_Pressure_Plate
-71	mcblocks:Iron_Door
+
+71 0	mcblocks:Iron_Door_Bottom_Closed 3		//W
+71 1	mcblocks:Iron_Door_Bottom_Closed 2		//N
+71 2	mcblocks:Iron_Door_Bottom_Closed 1		//E
+71 3	mcblocks:Iron_Door_Bottom_Closed 0		//S
+71 4	mcblocks:Iron_Door_Bottom_Open 3		//W
+71 5	mcblocks:Iron_Door_Bottom_Open 2		//N
+71 6	mcblocks:Iron_Door_Bottom_Open 1		//E
+71 7	mcblocks:Iron_Door_Bottom_Open 0		//S
+71 8	mcblocks:Iron_Door_Top_HingeRight 3
+71 9	mcblocks:Iron_Door_Top_HingeLeft 3
+71 10	mcblocks:Iron_Door_Top_HingeRight 2
+71 11	mcblocks:Iron_Door_Top_HingeLeft 2
+71 12	mcblocks:Iron_Door_Top_HingeRight 1
+71 13	mcblocks:Iron_Door_Top_HingeLeft 1
+71 14	mcblocks:Iron_Door_Top_HingeRight 0
+71 15	mcblocks:Iron_Door_Top_HingeLeft 0
+
+
 72	mcblocks:Wooden_Pressure_Plate
 73	mcblocks:Redstone_Ore
 74	mcblocks:Redstone_Ore_Glowing
@@ -554,44 +592,56 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 105 6	mcblocks:Melon_Stem6
 105 7	mcblocks:Melon_Stem7
 
-106 1	mcblocks:Vines 5		//S
-106 2	mcblocks:Vines 3		//W
-106 4	mcblocks:Vines 4		//N
-106 8	mcblocks:Vines 2		//E
+106 0	mcblocks:Vines 0		//?
+106 1	mcblocks:Vines 1		//?
+106 2	mcblocks:Vines 4		//N
+106 3	mcblocks:Vines 5		//S
+106 4	mcblocks:Vines 3		//W
+106 5	mcblocks:Vines 2		//E
+106 6	mcblocks:Vines 6		//?
+106 7	mcblocks:Vines 7		//?
+106 8	mcblocks:Vines 8		//?
+106 9	mcblocks:Vines 9		//?
+106 10	mcblocks:Vines 10		//?
+106 11	mcblocks:Vines 12		//?
+106 12	mcblocks:Vines 11		//?
+106 13	mcblocks:Vines 13		//?
+106 14	mcblocks:Vines 14		//?
+106 15	mcblocks:Vines 15		//?
 
 107	mcblocks:Oak_Fence_Gate
 
-108 0	mcblocks:stair_Brick 1		//E
-108 1	mcblocks:stair_Brick 3		//W
-108 2	mcblocks:stair_Brick 2		//S
-108 3	mcblocks:stair_Brick 0		//N
-108 4	mcblocks:stair_Brick_USD 1		//E
-108 5	mcblocks:stair_Brick_USD 3		//W
-108 6	mcblocks:stair_Brick_USD 2		//S
-108 7	mcblocks:stair_Brick_USD 0		//N
+108 0	mcblocks:stair_Brick 3		//E
+108 1	mcblocks:stair_Brick 1		//W
+108 2	mcblocks:stair_Brick 0		//S
+108 3	mcblocks:stair_Brick 2		//N
+108 4	mcblocks:stair_Brick_USD 3		//E
+108 5	mcblocks:stair_Brick_USD 1		//W
+108 6	mcblocks:stair_Brick_USD 0		//S
+108 7	mcblocks:stair_Brick_USD 2		//N
 
-109 0	mcblocks:stair_Stone_Brick 1		//E
-109 1	mcblocks:stair_Stone_Brick 3		//W
-109 2	mcblocks:stair_Stone_Brick 2		//S
-109 3	mcblocks:stair_Stone_Brick 0		//N
-109 4	mcblocks:stair_Stone_Brick_USD 1		//E
-109 5	mcblocks:stair_Stone_Brick_USD 3		//W
-109 6	mcblocks:stair_Stone_Brick_USD 2		//S
-109 7	mcblocks:stair_Stone_Brick_USD 0		//N
+109 0	mcblocks:stair_Stone_Brick 3		//E
+109 1	mcblocks:stair_Stone_Brick 1		//W
+109 2	mcblocks:stair_Stone_Brick 0		//S
+109 3	mcblocks:stair_Stone_Brick 2		//N
+109 4	mcblocks:stair_Stone_Brick_USD 3		//E
+109 5	mcblocks:stair_Stone_Brick_USD 1		//W
+109 6	mcblocks:stair_Stone_Brick_USD 0		//S
+109 7	mcblocks:stair_Stone_Brick_USD 2		//N
 
 110	mcblocks:Mycelium
 111	mcblocks:Lily_Pad
 112	mcblocks:Nether_Brick
 113	mcblocks:Nether_Brick_Fence
 
-114 0	mcblocks:stair_Nether_Brick 1		//E
-114 1	mcblocks:stair_Nether_Brick 3		//W
-114 2	mcblocks:stair_Nether_Brick 2		//S
-114 3	mcblocks:stair_Nether_Brick 0		//N
-114 4	mcblocks:stair_Nether_Brick_USD 1		//E
-114 5	mcblocks:stair_Nether_Brick_USD 3		//W
-114 6	mcblocks:stair_Nether_Brick_USD 2		//S
-114 7	mcblocks:stair_Nether_Brick_USD 0		//N
+114 0	mcblocks:stair_Nether_Brick 3		//E
+114 1	mcblocks:stair_Nether_Brick 1		//W
+114 2	mcblocks:stair_Nether_Brick 0		//S
+114 3	mcblocks:stair_Nether_Brick 2		//N
+114 4	mcblocks:stair_Nether_Brick_USD 3		//E
+114 5	mcblocks:stair_Nether_Brick_USD 1		//W
+114 6	mcblocks:stair_Nether_Brick_USD 0		//S
+114 7	mcblocks:stair_Nether_Brick_USD 2		//N
 
 115 0	mcblocks:Nether_Wart0
 115 1	mcblocks:Nether_Wart1
@@ -638,14 +688,14 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 127 11	mcblocks:Cocoa_Pod2 3		//W
 
 
-128 0	mcblocks:stair_Sandstone 1		//E
-128 1	mcblocks:stair_Sandstone 3		//W
-128 2	mcblocks:stair_Sandstone 2		//S
-128 3	mcblocks:stair_Sandstone 0		//N
-128 4	mcblocks:stair_Sandstone_USD 1		//E
-128 5	mcblocks:stair_Sandstone_USD 3		//W
-128 6	mcblocks:stair_Sandstone_USD 2		//S
-128 7	mcblocks:stair_Sandstone_USD 0		//N
+128 0	mcblocks:stair_Sandstone 3		//E
+128 1	mcblocks:stair_Sandstone 1		//W
+128 2	mcblocks:stair_Sandstone 0		//S
+128 3	mcblocks:stair_Sandstone 2		//N
+128 4	mcblocks:stair_Sandstone_USD 3		//E
+128 5	mcblocks:stair_Sandstone_USD 1		//W
+128 6	mcblocks:stair_Sandstone_USD 0		//S
+128 7	mcblocks:stair_Sandstone_USD 2		//N
 
 
 129	mcblocks:Emerald_Ore
@@ -659,32 +709,32 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 132	mcblocks:Tripwire
 133	mcblocks:Emerald_Block
 
-134 0	mcblocks:stair_Spruce_Wooden 1		//E
-134 1	mcblocks:stair_Spruce_Wooden 3		//W
-134 2	mcblocks:stair_Spruce_Wooden 2		//S
-134 3	mcblocks:stair_Spruce_Wooden 0		//N
-134 4	mcblocks:stair_Spruce_Wooden_USD 1		//E
-134 5	mcblocks:stair_Spruce_Wooden_USD 3		//W
-134 6	mcblocks:stair_Spruce_Wooden_USD 2		//S
-134 7	mcblocks:stair_Spruce_Wooden_USD 0		//N
+134 0	mcblocks:stair_Spruce_Wooden 3		//E
+134 1	mcblocks:stair_Spruce_Wooden 1		//W
+134 2	mcblocks:stair_Spruce_Wooden 0		//S
+134 3	mcblocks:stair_Spruce_Wooden 2		//N
+134 4	mcblocks:stair_Spruce_Wooden_USD 3		//E
+134 5	mcblocks:stair_Spruce_Wooden_USD 1		//W
+134 6	mcblocks:stair_Spruce_Wooden_USD 0		//S
+134 7	mcblocks:stair_Spruce_Wooden_USD 2		//N
 
-135 0	mcblocks:stair_Birch_Wooden 1		//E
-135 1	mcblocks:stair_Birch_Wooden 3		//W
-135 2	mcblocks:stair_Birch_Wooden 2		//S
-135 3	mcblocks:stair_Birch_Wooden 0		//N
-135 4	mcblocks:stair_Birch_Wooden_USD 1		//E
-135 5	mcblocks:stair_Birch_Wooden_USD 3		//W
-135 6	mcblocks:stair_Birch_Wooden_USD 2		//S
-135 7	mcblocks:stair_Birch_Wooden_USD 0		//N
+135 0	mcblocks:stair_Birch_Wooden 3		//E
+135 1	mcblocks:stair_Birch_Wooden 1		//W
+135 2	mcblocks:stair_Birch_Wooden 0		//S
+135 3	mcblocks:stair_Birch_Wooden 2		//N
+135 4	mcblocks:stair_Birch_Wooden_USD 3		//E
+135 5	mcblocks:stair_Birch_Wooden_USD 1		//W
+135 6	mcblocks:stair_Birch_Wooden_USD 0		//S
+135 7	mcblocks:stair_Birch_Wooden_USD 2		//N
 
-136 0	mcblocks:stair_Jungle_Wooden 1		//E
-136 1	mcblocks:stair_Jungle_Wooden 3		//W
-136 2	mcblocks:stair_Jungle_Wooden 2		//S
-136 3	mcblocks:stair_Jungle_Wooden 0		//N
-136 4	mcblocks:stair_Jungle_Wooden_USD 1		//E
-136 5	mcblocks:stair_Jungle_Wooden_USD 3		//W
-136 6	mcblocks:stair_Jungle_Wooden_USD 2		//S
-136 7	mcblocks:stair_Jungle_Wooden_USD 0		//N
+136 0	mcblocks:stair_Jungle_Wooden 3		//E
+136 1	mcblocks:stair_Jungle_Wooden 1		//W
+136 2	mcblocks:stair_Jungle_Wooden 0		//S
+136 3	mcblocks:stair_Jungle_Wooden 2		//N
+136 4	mcblocks:stair_Jungle_Wooden_USD 3		//E
+136 5	mcblocks:stair_Jungle_Wooden_USD 1		//W
+136 6	mcblocks:stair_Jungle_Wooden_USD 0		//S
+136 7	mcblocks:stair_Jungle_Wooden_USD 2		//N
 
 137	mcblocks:Command_Block
 138	mcblocks:Beacon
@@ -759,14 +809,14 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 155 3	mcblocks:Quartz_Pillar 0		//N
 155 4	mcblocks:Quartz_Pillar 1		//E
 
-156 0	mcblocks:stair_Quartz 1		//E
-156 1	mcblocks:stair_Quartz 3		//W
-156 2	mcblocks:stair_Quartz 2		//S
-156 3	mcblocks:stair_Quartz 0		//N
-156 4	mcblocks:stair_Quartz_USD 1		//E
-156 5	mcblocks:stair_Quartz_USD 3		//W
-156 6	mcblocks:stair_Quartz_USD 2		//S
-156 7	mcblocks:stair_Quartz_USD 0		//N
+156 0	mcblocks:stair_Quartz 3		//E
+156 1	mcblocks:stair_Quartz 1		//W
+156 2	mcblocks:stair_Quartz 0		//S
+156 3	mcblocks:stair_Quartz 2		//N
+156 4	mcblocks:stair_Quartz_USD 3		//E
+156 5	mcblocks:stair_Quartz_USD 1		//W
+156 6	mcblocks:stair_Quartz_USD 0		//S
+156 7	mcblocks:stair_Quartz_USD 2		//N
 
 157 0	mcblocks:Activator_rails 0		//N
 157 1	mcblocks:Activator_rails 1		//E
@@ -833,23 +883,23 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 162 12	mcblocks:Acacia_Wood_All_Bark
 162 13	mcblocks:Dark_Oak_Wood_All_Bark
 
-163 0	mcblocks:stair_Acacia_Wood 1		//E
-163 1	mcblocks:stair_Acacia_Wood 3		//W
-163 2	mcblocks:stair_Acacia_Wood 2		//S
-163 3	mcblocks:stair_Acacia_Wood 0		//N
-163 4	mcblocks:stair_Acacia_Wood_USD 1		//E
-163 5	mcblocks:stair_Acacia_Wood_USD 3		//W
-163 6	mcblocks:stair_Acacia_Wood_USD 2		//S
-163 7	mcblocks:stair_Acacia_Wood_USD 0		//N
+163 0	mcblocks:stair_Acacia_Wood 3		//E
+163 1	mcblocks:stair_Acacia_Wood 1		//W
+163 2	mcblocks:stair_Acacia_Wood 0		//S
+163 3	mcblocks:stair_Acacia_Wood 2		//N
+163 4	mcblocks:stair_Acacia_Wood_USD 3		//E
+163 5	mcblocks:stair_Acacia_Wood_USD 1		//W
+163 6	mcblocks:stair_Acacia_Wood_USD 0		//S
+163 7	mcblocks:stair_Acacia_Wood_USD 2		//N
 
-164 0	mcblocks:stair_Dark_Oak_Wood 1		//E
-164 1	mcblocks:stair_Dark_Oak_Wood 3		//W
-164 2	mcblocks:stair_Dark_Oak_Wood 2		//S
-164 3	mcblocks:stair_Dark_Oak_Wood 0		//N
-164 4	mcblocks:stair_Dark_Oak_Wood_USD 1		//E
-164 5	mcblocks:stair_Dark_Oak_Wood_USD 3		//W
-164 6	mcblocks:stair_Dark_Oak_Wood_USD 2		//S
-164 7	mcblocks:stair_Dark_Oak_Wood_USD 0		//N
+164 0	mcblocks:stair_Dark_Oak_Wood 3		//E
+164 1	mcblocks:stair_Dark_Oak_Wood 1		//W
+164 2	mcblocks:stair_Dark_Oak_Wood 0		//S
+164 3	mcblocks:stair_Dark_Oak_Wood 2		//N
+164 4	mcblocks:stair_Dark_Oak_Wood_USD 3		//E
+164 5	mcblocks:stair_Dark_Oak_Wood_USD 1		//W
+164 6	mcblocks:stair_Dark_Oak_Wood_USD 0		//S
+164 7	mcblocks:stair_Dark_Oak_Wood_USD 2		//N
 
 165	mcblocks:Slime_Block
 166	mcblocks:Barrier
@@ -903,14 +953,14 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 179 1	mcblocks:Chiseled_Red_Sandstone
 179 2	mcblocks:Smooth_Red_Sandstone
 
-180 0	mcblocks:stair_Red_Sandstone 1		//E
-180 1	mcblocks:stair_Red_Sandstone 3		//W
-180 2	mcblocks:stair_Red_Sandstone 2		//S
-180 3	mcblocks:stair_Red_Sandstone 0		//N
-180 4	mcblocks:stair_Red_Sandstone_USD 1		//E
-180 5	mcblocks:stair_Red_Sandstone_USD 3		//W
-180 6	mcblocks:stair_Red_Sandstone_USD 2		//S
-180 7	mcblocks:stair_Red_Sandstone_USD 0		//N
+180 0	mcblocks:stair_Red_Sandstone 3		//E
+180 1	mcblocks:stair_Red_Sandstone 1		//W
+180 2	mcblocks:stair_Red_Sandstone 0		//S
+180 3	mcblocks:stair_Red_Sandstone 2		//N
+180 4	mcblocks:stair_Red_Sandstone_USD 3		//E
+180 5	mcblocks:stair_Red_Sandstone_USD 1		//W
+180 6	mcblocks:stair_Red_Sandstone_USD 0		//S
+180 7	mcblocks:stair_Red_Sandstone_USD 2		//N
 
 181	mcblocks:Red_Sandstone_Double_Slab
 182 0	mcblocks:slab_Red_Sandstone
@@ -927,57 +977,57 @@ NB Many of the North/South/East/West/Up/Down directions in this file are wrong
 192	mcblocks:Acacia_Fence
 
 193 0	mcblocks:Spruce_Door_Bottom_Closed 3		//W
-193 1	mcblocks:Spruce_Door_Bottom_Closed 0		//N
+193 1	mcblocks:Spruce_Door_Bottom_Closed 2		//N
 193 0	mcblocks:Spruce_Door_Bottom_Closed 1		//E
-193 1	mcblocks:Spruce_Door_Bottom_Closed 2		//S
+193 1	mcblocks:Spruce_Door_Bottom_Closed 0		//S
 193 0	mcblocks:Spruce_Door_Bottom_Open 3		//W
-193 1	mcblocks:Spruce_Door_Bottom_Open 0		//N
+193 1	mcblocks:Spruce_Door_Bottom_Open 2		//N
 193 0	mcblocks:Spruce_Door_Bottom_Open 1		//E
-193 1	mcblocks:Spruce_Door_Bottom_Open 2		//S
+193 1	mcblocks:Spruce_Door_Bottom_Open 0		//S
 193 8	mcblocks:Spruce_Door_Top_HingeRight
 193 9	mcblocks:Spruce_Door_Top_HingeLeft
 
 194 0	mcblocks:Birch_Door_Bottom_Closed 3		//W
-194 1	mcblocks:Birch_Door_Bottom_Closed 0		//N
+194 1	mcblocks:Birch_Door_Bottom_Closed 2		//N
 194 0	mcblocks:Birch_Door_Bottom_Closed 1		//E
-194 1	mcblocks:Birch_Door_Bottom_Closed 2		//S
+194 1	mcblocks:Birch_Door_Bottom_Closed 0		//S
 194 0	mcblocks:Birch_Door_Bottom_Open 3		//W
-194 1	mcblocks:Birch_Door_Bottom_Open 0		//N
+194 1	mcblocks:Birch_Door_Bottom_Open 2		//N
 194 0	mcblocks:Birch_Door_Bottom_Open 1		//E
-194 1	mcblocks:Birch_Door_Bottom_Open 2		//S
+194 1	mcblocks:Birch_Door_Bottom_Open 0		//S
 194 8	mcblocks:Birch_Door_Top_HingeRight
 194 9	mcblocks:Birch_Door_Top_HingeLeft
 
 195 0	mcblocks:Jungle_Door_Bottom_Closed 3		//W
-195 1	mcblocks:Jungle_Door_Bottom_Closed 0		//N
+195 1	mcblocks:Jungle_Door_Bottom_Closed 2		//N
 195 0	mcblocks:Jungle_Door_Bottom_Closed 1		//E
-195 1	mcblocks:Jungle_Door_Bottom_Closed 2		//S
+195 1	mcblocks:Jungle_Door_Bottom_Closed 0		//S
 195 0	mcblocks:Jungle_Door_Bottom_Open 3		//W
-195 1	mcblocks:Jungle_Door_Bottom_Open 0		//N
+195 1	mcblocks:Jungle_Door_Bottom_Open 2		//N
 195 0	mcblocks:Jungle_Door_Bottom_Open 1		//E
-195 1	mcblocks:Jungle_Door_Bottom_Open 2		//S
+195 1	mcblocks:Jungle_Door_Bottom_Open 0		//S
 195 8	mcblocks:Jungle_Door_Top_HingeRight
 195 9	mcblocks:Jungle_Door_Top_HingeLeft
 
 196 0	mcblocks:Acacia_Door_Bottom_Closed 3		//W
-196 1	mcblocks:Acacia_Door_Bottom_Closed 0		//N
+196 1	mcblocks:Acacia_Door_Bottom_Closed 2		//N
 196 0	mcblocks:Acacia_Door_Bottom_Closed 1		//E
-196 1	mcblocks:Acacia_Door_Bottom_Closed 2		//S
+196 1	mcblocks:Acacia_Door_Bottom_Closed 0		//S
 196 0	mcblocks:Acacia_Door_Bottom_Open 3		//W
-196 1	mcblocks:Acacia_Door_Bottom_Open 0		//N
+196 1	mcblocks:Acacia_Door_Bottom_Open 2		//N
 196 0	mcblocks:Acacia_Door_Bottom_Open 1		//E
-196 1	mcblocks:Acacia_Door_Bottom_Open 2		//S
+196 1	mcblocks:Acacia_Door_Bottom_Open 0		//S
 196 8	mcblocks:Acacia_Door_Top_HingeRight
 196 9	mcblocks:Acacia_Door_Top_HingeLeft
 
 197 0	mcblocks:Dark_Oak_Door_Bottom_Closed 3		//W
-197 1	mcblocks:Dark_Oak_Door_Bottom_Closed 0		//N
+197 1	mcblocks:Dark_Oak_Door_Bottom_Closed 2		//N
 197 0	mcblocks:Dark_Oak_Door_Bottom_Closed 1		//E
-197 1	mcblocks:Dark_Oak_Door_Bottom_Closed 2		//S
+197 1	mcblocks:Dark_Oak_Door_Bottom_Closed 0		//S
 197 0	mcblocks:Dark_Oak_Door_Bottom_Open 3		//W
-197 1	mcblocks:Dark_Oak_Door_Bottom_Open 0		//N
+197 1	mcblocks:Dark_Oak_Door_Bottom_Open 2		//N
 197 0	mcblocks:Dark_Oak_Door_Bottom_Open 1		//E
-197 1	mcblocks:Dark_Oak_Door_Bottom_Open 2		//S
+197 1	mcblocks:Dark_Oak_Door_Bottom_Open 0		//S
 197 8	mcblocks:Dark_Oak_Door_Top_HingeRight
 197 9	mcblocks:Dark_Oak_Door_Top_HingeLeft
 
